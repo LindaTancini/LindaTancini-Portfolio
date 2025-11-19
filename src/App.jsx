@@ -1,11 +1,16 @@
+// Importazioni dei componenti
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+import HeroSection from "./components/HeroSection";
+import ProjectCardList from "./components/ProjectCardList";
+
 function App() {
   return (
     <>
-      <div>
-        <button type="button" class="btn btn-primary">
-          Sono un bottone in app per vedere se Bootstrap funziona
-        </button>
-      </div>
+      <Header />
+      <NavBar />
+      <HeroSection />
+      <ProjectCardList />
     </>
   );
 }
