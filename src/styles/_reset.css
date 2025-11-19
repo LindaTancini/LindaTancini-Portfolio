@@ -1,0 +1,35 @@
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Migliora la leggibilità */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  background-color: #fde6ee; /* colore sakura pastello */
+  color: #3a2b2f;
+}
+
+/* Rimuozione delle decorazioni nei link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* No bordi blu al click */
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Immagini conformi al layout */
+img {
+  max-width: 100%;
+  display: block;
+}
