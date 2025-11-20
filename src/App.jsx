@@ -1,17 +1,23 @@
 // Importazioni dei componenti
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import ProjectCardList from "./components/ProjectCardList";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DefaultLayout from "./layout/DefaultLayout";
+import HomePage from "./pages/HomePage";
+import AboutMePage from "./pages/AboutMePage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
-    <>
-      <Header />
-      <HeroSection />
-      <ProjectCardList />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<DefaultLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutMePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
