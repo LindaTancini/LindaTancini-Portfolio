@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #f8d7e3 !important;
+}
+
+/* Link */
+.navbar .nav-link {
+  color: #a66466;
+  font-weight: 800;
+}
+
+/* Hover */
+.navbar .nav-link:hover {
+  color: #d16c92;
+  transform: translateY(-1px);
+  transition: color 0.3s, transform 0.3s;
+}
