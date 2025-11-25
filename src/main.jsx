@@ -4,6 +4,7 @@ import App from "./App.jsx";
 // Importazione di Bootstrap CSS e JS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap-icons/font/bootstrap-icons.css";
 // Importazione del file CSS principale
 import "./index.css";
 
