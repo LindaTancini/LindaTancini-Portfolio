@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 // Header Component
 function Header() {
   return (
-    <header className="text-center py-3">
+    <header className="text-center">
       {/* Logo */}
       <img
         src="/logo.png"

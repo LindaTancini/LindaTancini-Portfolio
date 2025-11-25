@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 // NavBar Component
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container d-flex align-items-center">
+    <nav className="navbar navbar-expand-lg ">
+      <div className="container-fluid">
         {/* LINK */}
         <div
           className="collapse navbar-collapse order-2 order-lg-1"
           id="mainNav"
         >
-          <ul className="navbar-nav mx-auto gap-3 text-center">
+          <ul className="navbar-nav mx-auto gap-4">
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home
