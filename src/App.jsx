@@ -5,19 +5,24 @@ import HomePage from "./pages/HomePage";
 import AboutMePage from "./pages/AboutMePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
+import Petals from "./components/Petals";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<DefaultLayout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutMePage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Petals count={20} />
+
+      <BrowserRouter>
+        <Routes>
+          <Route element={<DefaultLayout />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutMePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
