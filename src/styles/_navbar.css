@@ -1,5 +1,7 @@
 .navbar {
   background-color: #f8d7e3 !important;
+  position: relative;
+  z-index: 10;
 }
 
 /* Link */
