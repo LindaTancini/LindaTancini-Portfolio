@@ -1,0 +1,39 @@
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+/* Bottone  */
+.btn-pink {
+  background-color: #e673a3;
+  color: white;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  transition: 0.2s ease;
+}
+
+.btn-pink:hover {
+  background-color: #d95e91;
+  transform: scale(1.05);
+}
+
+/* Immagine */
+.hero-img {
+  max-width: 450px;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Effetto fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
