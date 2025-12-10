@@ -11,7 +11,7 @@ function NavBar() {
           className="collapse navbar-collapse order-2 order-lg-1"
           id="mainNav"
         >
-          <ul className="navbar-nav mx-auto gap-4">
+          <ul className="navbar-nav mx-auto gap-5 ">
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home
