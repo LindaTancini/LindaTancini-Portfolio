@@ -1,11 +1,16 @@
 //Importazioni
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 // NavBar Component
 function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
+        {/* Logo */}
+        <Link className="navbar-brand d-flex align-items-center" to="/">
+          <img src={logo} alt="Logo" style={{ width: "60px" }} />
+        </Link>
         {/* LINK */}
         <div
           className="collapse navbar-collapse order-2 order-lg-1"
