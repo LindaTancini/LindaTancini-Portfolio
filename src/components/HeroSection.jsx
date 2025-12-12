@@ -9,9 +9,13 @@ function HeroSection() {
         <div className="row w-100 align-items-center justify-content-between">
           {/* Testo */}
           <div className="col-md-6 text-center text-md-start hero-text">
-            <h1 className="fw-bold mb-3">Ciao, sono Linda</h1>
+            <h1 className="fw-bold m-0">Ciao, sono Linda!</h1>
+            <h2 className="fw-bold mb-3 sub-headline">
+              Web Developer in crescita, appassionata di Design.
+            </h2>
             <p className="lead mb-4">
-              Web Developer in crescita, tra design, creatività e molto codice.
+              Tra codice, design e un po’ di magia felina, creo esperienze
+              digitali delicate e curate.
             </p>
             <a href="/projects" className="btn btn-pink px-4 py-2">
               Guarda i miei progetti
