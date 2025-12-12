@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.hero .row {
+  padding-top: 40px;
+}
+
 /* Bottone  */
 .btn-pink {
   background-color: #e673a3;
@@ -20,10 +24,21 @@
   transform: scale(1.05);
 }
 
+/* Testo */
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.hero-text p {
+  max-width: 420px;
+}
+
 /* Immagine */
 .hero-img {
   max-width: 450px;
   animation: fadeIn 1.2s ease forwards;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
 }
 
 /* Effetto fade-in */
