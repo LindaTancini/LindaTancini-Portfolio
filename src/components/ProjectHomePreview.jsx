@@ -7,6 +7,7 @@ function ProjectHomePreview() {
   return (
     <section className="projects-preview py-5">
       <div className="container">
+        <h2 className="text-center mb-5">I miei progetti preferiti:</h2>
         <div className="row g-4 justify-content-center">
           {dataProjectsHome.map((project) => (
             <div key={project.id} className="col-md-6 col-lg-4">
