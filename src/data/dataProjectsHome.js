@@ -5,7 +5,7 @@ const homeProjects = [
     id: 1,
     title: "Card Blog Patisserie",
     description:
-      "Un Design System che prende ispirazione per un ipotetico blog che pubblica ricette di dolci.",
+      "Un Design System che prende ispirazione per un ipotetico blog che pubblica ricette di dolci, in particolare di pasticceria home-made.",
     image: "/public/projects/blog-patisserie.png",
     slug: "blog-patisserie",
   },
