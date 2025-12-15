@@ -6,7 +6,7 @@ const homeProjects = [
     title: "Card Blog Patisserie",
     description:
       "Un Design System che prende ispirazione per un ipotetico blog che pubblica ricette di dolci.",
-    image: "blog-patisserie",
+    image: "/public/projects/blog-patisserie.png",
     slug: "blog-patisserie",
   },
   {
@@ -14,7 +14,7 @@ const homeProjects = [
     title: "Card e-commerce Gatti",
     description:
       "Un Design System che prende ispirazione per un ipotetico e-commerce che vende prodotti per animali, in particolare per gatti.",
-    image: "ecommerce-gatti",
+    image: "/public/projects/ecommerce-gatti.png",
     slug: "ecommerce-gatti",
   },
   {
@@ -22,7 +22,7 @@ const homeProjects = [
     title: "Movies Blog",
     description:
       "Progetto Full Stack individuale sulla creazione e gestione di un blog di film. Realizzato con React per il front-end e Node.js con Express per il back-end.",
-    image: "movies-blog",
+    image: "/public/projects/movies-blog.png",
     slug: "movies-blog",
   },
 ];
