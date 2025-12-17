@@ -1,0 +1,79 @@
+/* Sezione */
+.skills-section {
+  padding: 24px 0;
+}
+
+/* Contenitore */
+.skills-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Track che scorre all'infinito */
+.skills-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+  will-change: transform;
+}
+
+/* Pausa su interazione */
+.skills-wrapper:hover .skills-track {
+  animation-play-state: paused;
+}
+
+/* Singola skill */
+.skill-item {
+  flex: 0 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+/* Icone SVG */
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Label */
+.skill-label {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Titolo */
+.skills-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #cc4f7c;
+  margin-bottom: 30px;
+}
+
+/* Animazione */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive desktop */
+@media (min-width: 768px) {
+  .skill-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .skill-label {
+    font-size: 14px;
+  }
+}
