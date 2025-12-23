@@ -30,13 +30,25 @@ footer h5 {
 
 /* Immagini */
 .footer-img {
+  display: block;
   max-width: 90px;
+  margin-inline: auto;
   opacity: 0.8;
+}
+
+/* Aggiustamento centratura immagini */
+.footer-img-left {
+  transform: translateX(12px);
+}
+
+.footer-img-right {
+  transform: translateX(-12px);
 }
 
 /* Responsive */
 @media (min-width: 768px) {
   .footer-img {
     max-width: 200px;
+    transform: none;
   }
 }
