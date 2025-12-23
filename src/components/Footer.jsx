@@ -13,7 +13,7 @@ function Footer() {
             <img
               src={leftImg}
               alt="Decorazione sinistra"
-              className="footer-img"
+              className="footer-img footer-img-left"
             />
           </div>
 
@@ -58,7 +58,7 @@ function Footer() {
             <img
               src={rightImg}
               alt="Decorazione destra"
-              className="footer-img"
+              className="footer-img footer-img-right"
             />
           </div>
         </div>
