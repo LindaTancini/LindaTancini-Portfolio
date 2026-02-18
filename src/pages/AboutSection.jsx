@@ -21,3 +21,21 @@ function AboutSection({ title, image, children, reverse = false }) {
 }
 
 export default AboutSection;
+
+{
+  /* 
+        SPIEGAZIONE PROPS USATE:
+
+        - children:
+          rappresenta tutto il contenuto JSX passato tra i tag
+          <AboutSection>...</AboutSection>.
+          Serve per rendere il componente riutilizzabile con testi
+          diversi senza duplicare la struttura.
+
+        - reverse:
+          prop booleana usata per invertire l'ordine di immagine e testo.
+          Viene applicata solo da breakpoint md in su grazie alla classe
+          Bootstrap "flex-md-row-reverse", mantenendo un layout
+          mobile-first (immagine sopra, testo sotto).
+      */
+}
