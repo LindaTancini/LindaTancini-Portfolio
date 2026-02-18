@@ -73,6 +73,15 @@ const projectsCard = [
     category: "Front-end",
     slug: "spotify-clone",
   },
+  {
+    id: 9,
+    title: "Discord Clone",
+    description:
+      "Progetto indivuale basato sulla realizzazione di una pagina dedicata a Discord.",
+    image: "/public/projects/discord.png",
+    category: "Front-end",
+    slug: "discord-clone",
+  },
 ];
 
 export default projectsCard;
