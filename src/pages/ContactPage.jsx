@@ -1,3 +1,6 @@
+// Importazioni
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 function ContactPage() {
   return (
     <div className="container py-5">
@@ -67,7 +70,7 @@ function ContactPage() {
                 />
               </div>
 
-              <button type="submit" className="btn btn-dark w-100">
+              <button type="submit" className="btn btn-contact w-100">
                 Invia messaggio
               </button>
             </form>
@@ -84,16 +87,18 @@ function ContactPage() {
           <a
             href="https://github.com/LindaTancini?tab=repositories"
             target="_blank"
-            className="text-dark"
+            rel="noopener noreferrer"
+            className="social-icon"
           >
-            GitHub
+            <FaGithub size={28} />
           </a>
           <a
             href="https://www.linkedin.com/in/linda-tancini-2ba649388/"
             target="_blank"
-            className="text-dark"
+            rel="noopener noreferrer"
+            className="social-icon"
           >
-            LinkedIn
+            <FaLinkedin size={28} />
           </a>
         </div>
       </div>
