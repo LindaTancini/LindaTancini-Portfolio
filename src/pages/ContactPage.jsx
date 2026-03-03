@@ -5,9 +5,12 @@ function ContactPage() {
   return (
     <div className="container py-5">
       <div className="text-center mb-5">
-        <h1 className="fw-bold">Contattami</h1>
-        <p className="text-muted mt-3">
-          Hai un progetto in mente o vuoi collaborare? Scrivimi.
+        <h1 className="fw-bold contact-title">
+          Contattami con un colpo di zampa!
+        </h1>
+        <p className="text-muted mt-3 contact-text">
+          Hai un progetto in mente o vuoi collaborare? <br />
+          Scrivimi, non morderò (probabilmente) 😼
         </p>
       </div>
 
@@ -21,6 +24,7 @@ function ContactPage() {
                 <input
                   type="text"
                   name="name"
+                  placeholder="Inserisci il tuo nome..."
                   className="form-control"
                   required
                 />
@@ -32,6 +36,7 @@ function ContactPage() {
                 <input
                   type="text"
                   name="surname"
+                  placeholder="Inserisci il tuo cognome..."
                   className="form-control"
                   required
                 />
@@ -43,6 +48,7 @@ function ContactPage() {
                 <input
                   type="email"
                   name="email"
+                  placeholder="Inserisci la tua email..."
                   className="form-control"
                   required
                 />
@@ -54,6 +60,7 @@ function ContactPage() {
                 <input
                   type="text"
                   name="subject"
+                  placeholder="Inserisci l'oggetto del messaggio..."
                   className="form-control"
                   required
                 />
@@ -65,6 +72,7 @@ function ContactPage() {
                 <textarea
                   name="message"
                   className="form-control"
+                  placeholder="Inserisci il tuo messaggio..."
                   rows="4"
                   required
                 />
@@ -79,8 +87,8 @@ function ContactPage() {
       </div>
 
       <div className="text-center mt-5">
-        <p className="text-muted mb-2">
-          Oppure contattami direttamente sui miei social:
+        <p className="text-muted mb-2 contact-text">
+          Seguimi sui social, mi piacerebbe condividere il mio mondo con te 💕🐱
         </p>
 
         <div className="d-flex justify-content-center gap-4">
