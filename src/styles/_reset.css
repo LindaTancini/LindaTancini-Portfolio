@@ -7,10 +7,21 @@
 
 /* Migliora la leggibilità */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
-  background-color: #fde6ee; /* colore sakura pastello */
+  background-color: #fde6ee;
   color: #3a2b2f;
+}
+
+/* Titoli */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 /* Rimuozione delle decorazioni nei link */
