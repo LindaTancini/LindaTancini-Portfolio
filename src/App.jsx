@@ -6,6 +6,7 @@ import AboutMePage from "./pages/AboutMePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import Petals from "./components/Petals";
+import ProjectsDetailsPage from "./pages/ProjectsDetailsPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutMePage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/:slug" element={<ProjectsDetailsPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Route>
         </Routes>
