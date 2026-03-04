@@ -1,9 +1,11 @@
-// Importazioni
+// Importazioni immagini
 import AboutMeImg from "../assets/me.jpg";
 import AboutMeCats from "../assets/me-and-cats.jpg";
 import AboutMeManga from "../assets/me-manga-and-cats.jpg";
 
-const aboutSections = [
+/* Sezione narrativa */
+
+export const aboutSections = [
   {
     id: 1,
     subtitle: "Chi sono e cosa faccio",
@@ -24,4 +26,35 @@ const aboutSections = [
   },
 ];
 
-export default aboutSections;
+/* Skills */
+
+export const skills = {
+  hard: {
+    frontend: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Bootstrap",
+      "Tailwind CSS",
+    ],
+    backend: ["Node.js", "Express", "MySQL", "REST API"],
+    design: [
+      "UI/UX Basics",
+      "Atomic Design",
+      "Storybook",
+      "Accessibilità (WCAG/ARIA)",
+      "Responsive Design",
+      "Componenti riutilizzabili",
+    ],
+    tools: ["Git", "GitHub", "VS Code", "Postman", "NPM"],
+  },
+  soft: [
+    "Team Work",
+    "Problem Solving",
+    "Empatia",
+    "Creatività",
+    "Comunicazione",
+  ],
+};
