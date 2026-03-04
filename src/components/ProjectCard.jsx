@@ -1,4 +1,6 @@
-function ProjectCard({ title, description, image, category }) {
+import { Link } from "react-router-dom";
+
+function ProjectCard({ title, description, image, category, slug }) {
   return (
     <div className="card border-0 shadow-sm h-100 rounded-4 overflow-hidden">
       {/* Immagine */}
@@ -15,7 +17,9 @@ function ProjectCard({ title, description, image, category }) {
         <p className="card-text text-muted flex-grow-1">{description}</p>
 
         {/* Bottone */}
-        <button className="btn btn-outline-dark mt-3">Scopri di più</button>
+        <Link to={`/projects/${slug}`} className="btn btn-outline-dark mt-3">
+          Scopri di più
+        </Link>
       </div>
     </div>
   );
