@@ -1,7 +1,5 @@
 // Array che comprende i progetti da mostrare nella card dei progetti
 
-import { g } from "framer-motion/client";
-
 const projectsCard = [
   {
     id: 1,
@@ -15,11 +13,19 @@ const projectsCard = [
     duration: "Una settimana",
     role: "Component Designer",
     technologies: ["Storybook", "React", "CSS"],
-    challenges:
-      "La sfida principale è stata quella di creare un design coerente e accattivante per un blog di ricette, che potesse essere facilmente adattabile a diverse tipologie di contenuti e dispositivi.",
+    challenges: [
+      "Creare un design coerente per un blog di pasticceria",
+      "Sviluppare componenti modulari riutilizzabili",
+      "Garantire responsività su diversi dispositivi",
+    ],
     image: "/public/projects/blog-patisserie.png",
     category: "Design System",
     github: "https://github.com/LindaTancini/blog-patisserie-design-system",
+    gallery: [
+      "/public/projects/blog-patisserie.png",
+      "/public/projects/blog-patisserie.png",
+      "/public/projects/blog-patisserie.png",
+    ],
   },
   {
     id: 2,
@@ -33,11 +39,19 @@ const projectsCard = [
     duration: "Una settimana",
     role: "Component Designer",
     technologies: ["Storybook", "React", "CSS"],
-    challenges:
-      "La sfida principale è stata quella di creare un design coerente e accattivante per un e-commerce di prodotti per gatti, che potesse essere facilmente adattabile a diverse tipologie di contenuti e dispositivi.",
+    challenges: [
+      "Creare un design coerente per un e-commerce di prodotti per gatti",
+      "Sviluppare componenti modulari riutilizzabili",
+      "Garantire responsività su diversi dispositivi",
+    ],
     image: "/public/projects/ecommerce-gatti.png",
     category: "Design System",
     github: "https://github.com/LindaTancini/webdesign-card-component",
+    gallery: [
+      "/public/projects/ecommerce-gatti.png",
+      "/public/projects/ecommerce-gatti.png",
+      "/public/projects/ecommerce-gatti.png",
+    ],
   },
   {
     id: 3,
@@ -47,15 +61,23 @@ const projectsCard = [
       "Progetto indivuale del mio portfolio personale volto a vetrina digitale dei miei lavori e delle mie competenze.",
     fullDescription:
       "Progetto indivuale del mio portfolio personale volto a vetrina digitale dei miei lavori e delle mie competenze. Il progetto è stato realizzato con React e comprende una serie di sezioni come Home, Progetti, Competenze e Contatti, tutte progettate per creare un'esperienza utente coerente e piacevole.",
-    year: 2025 - 2026,
+    year: "2025 - 2026",
     duration: "In corso",
     role: "Front-end Developer",
     technologies: ["React", "CSS", "JavaScript"],
-    challenges:
-      "La sfida principale è stata quella di creare un design coerente e accattivante per un portfolio personale, che potesse essere facilmente adattabile a diverse tipologie di contenuti e dispositivi, e che potesse mettere in risalto le mie competenze e i miei progetti in modo efficace.",
+    challenges: [
+      "Creare un design coerente per un portfolio personale",
+      "Sviluppare componenti modulari riutilizzabili",
+      "Garantire responsività su diversi dispositivi",
+    ],
     image: "/public/projects/portfolio-personale.png",
     category: "Front-end",
     github: "https://github.com/LindaTancini/LindaTancini-Portfolio",
+    gallery: [
+      "/public/projects/portfolio-personale.png",
+      "/public/projects/portfolio-personale.png",
+      "/public/projects/portfolio-personale.png",
+    ],
   },
   {
     id: 4,
@@ -69,11 +91,19 @@ const projectsCard = [
     duration: "Due settimane",
     role: "Full-stack Developer",
     technologies: ["React", "Node.js", "Express", "MySQL"],
-    challenges:
-      "La sfida principale è stata quella di creare un design coerente e accattivante per un e-commerce di cd e vinili, che potesse essere facilmente adattabile a diverse tipologie di contenuti e dispositivi, e che potesse offrire un'esperienza di acquisto fluida e intuitiva per gli utenti.",
+    challenges: [
+      "Creare un design coerente per un e-commerce di cd e vinili",
+      "Sviluppare funzionalità complesse come il carrello e il checkout",
+      "Garantire responsività su diversi dispositivi",
+    ],
     image: "/public/projects/boolshop.png",
     category: "Full-stack",
     github: "https://github.com/LindaTancini/boolshop-react",
+    gallery: [
+      "/public/projects/boolshop.png",
+      "/public/projects/boolshop.png",
+      "/public/projects/boolshop.png",
+    ],
   },
   {
     id: 5,
@@ -87,11 +117,19 @@ const projectsCard = [
     duration: "Due settimane",
     role: "Full-stack Developer",
     technologies: ["React", "Node.js", "Express", "MySQL"],
-    challenges:
-      "La sfida principale è stata quella di creare un design coerente e accattivante per un blog cinematografico, che potesse essere facilmente adattabile a diverse tipologie di contenuti e dispositivi, e che potesse offrire un'esperienza di lettura fluida e intuitiva per gli utenti.",
+    challenges: [
+      "Creare un design coerente per un blog cinematografico",
+      "Sviluppare funzionalità complesse come la gestione dei post e dei commenti",
+      "Garantire responsività su diversi dispositivi",
+    ],
     image: "/public/projects/movies-blog.png",
     category: "Full-stack",
     github: "https://github.com/LindaTancini/webapp-react",
+    gallery: [
+      "/public/projects/movies-blog.png",
+      "/public/projects/movies-blog.png",
+      "/public/projects/movies-blog.png",
+    ],
   },
   {
     id: 6,
@@ -105,11 +143,19 @@ const projectsCard = [
     duration: "Una settimana",
     role: "Front-end Developer",
     technologies: ["React", "CSS", "JavaScript"],
-    challenges:
-      "La sfida principale è stata quella di creare un design coerente e accattivante per una bacheca di foto, che potesse essere facilmente adattabile a diverse tipologie di contenuti e dispositivi, e che potesse offrire un'esperienza di visualizzazione fluida e intuitiva per gli utenti.",
+    challenges: [
+      "Creare un design coerente per una bacheca di foto",
+      "Sviluppare funzionalità complesse come la gestione dei like e dei commenti",
+      "Garantire responsività su diversi dispositivi",
+    ],
     image: "/public/projects/photo-blog.png",
     category: "Front-end",
     github: "https://github.com/LindaTancini/js-photo-blog",
+    gallery: [
+      "/public/projects/photo-blog.png",
+      "/public/projects/photo-blog.png",
+      "/public/projects/photo-blog.png",
+    ],
   },
 ];
 
