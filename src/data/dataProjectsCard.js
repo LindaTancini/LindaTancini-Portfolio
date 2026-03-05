@@ -55,33 +55,6 @@ const projectsCard = [
     category: "Front-end",
     slug: "photo-blog",
   },
-  {
-    id: 7,
-    title: "DC Comics",
-    description:
-      "Progetto indivuale React basato sulla realizazzione di una pagina dedicata ai fumetti DC.",
-    image: "/public/projects/dc-comics.png",
-    category: "Front-end",
-    slug: "dc-comics",
-  },
-  {
-    id: 8,
-    title: "Spotify Clone",
-    description:
-      "Progetto indivuale basato sulla realizzazione di una pagina dedicata a Spotify.",
-    image: "/public/projects/spotify.png",
-    category: "Front-end",
-    slug: "spotify-clone",
-  },
-  {
-    id: 9,
-    title: "Discord Clone",
-    description:
-      "Progetto indivuale basato sulla realizzazione di una pagina dedicata a Discord.",
-    image: "/public/projects/discord.png",
-    category: "Front-end",
-    slug: "discord-clone",
-  },
 ];
 
 export default projectsCard;
