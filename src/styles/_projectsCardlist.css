@@ -1,0 +1,96 @@
+/* Card */
+
+.project-card {
+  border-radius: 18px;
+  background: #ffffff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Immagine */
+
+.project-img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+/* Titolo */
+.project-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 15px 0 10px;
+  color: #8f4f52;
+}
+
+/* Badge */
+
+.project-badge {
+  background-color: #fde6ee;
+  color: #a66466;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+/* Descrizione */
+.project-description {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Bottone */
+
+.btn-project {
+  background-color: #a66466;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.btn-project:hover {
+  background-color: #8f4f52;
+  color: white;
+}
+
+/* Filtri */
+
+.project-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-filter {
+  background: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.btn-filter:hover {
+  background: #a66466;
+  color: white;
+}
+
+.btn-filter.active {
+  background: #a66466;
+  color: white;
+}
