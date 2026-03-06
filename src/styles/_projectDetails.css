@@ -1,0 +1,105 @@
+/* Immagine principale */
+
+.project-hero-img {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Card info */
+
+.project-info-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Titolo */
+.project-detailtitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: #8f4f52;
+}
+
+/* Descrizione breve */
+.project-detaildescription {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Titolo sezione dettagli */
+.project-semititle {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #8f4f52;
+}
+
+/* Descrizione completa card */
+
+.project-fulldescription {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Meta info */
+
+.project-meta p {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* Badge tecnologie */
+
+.tech-badge {
+  display: inline-block;
+  background: #f4d6de;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+/* GitHub  */
+
+.btn-github {
+  background: #a66466;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-github:hover {
+  background: #8e5052;
+}
+
+.project-gallery img {
+  border-radius: 16px;
+  transition: transform 0.25s ease;
+}
+
+.project-gallery img:hover {
+  transform: scale(1.04);
+}
+
+/* Torna ai progetti  */
+.btn-back {
+  background: transparent;
+  color: #a66466;
+  border: 2px solid #a66466;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.btn-back:hover {
+  background: #a66466;
+  color: white;
+}
