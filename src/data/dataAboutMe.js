@@ -1,7 +1,7 @@
 // Importazioni immagini
 import AboutMeImg from "../assets/me.jpg";
 import AboutMeCats from "../assets/me-and-cats.jpg";
-import AboutMeManga from "../assets/me-manga-and-cats.jpg";
+import AboutMeHobby from "../assets/me-hobby.png";
 
 /* Sezione narrativa */
 
@@ -21,7 +21,7 @@ export const aboutSections = [
   {
     id: 3,
     subtitle: "I miei hobby: Manga, Anime e Videogiochi",
-    image: AboutMeManga,
+    image: AboutMeHobby,
     text: "Qua ci sarà il testo che parla delle mie passioni",
   },
 ];
