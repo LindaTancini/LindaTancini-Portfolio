@@ -26,83 +26,106 @@ function ProjectsDetailsPage() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <Link to="/projects" className="btn btn-outline-secondary mb-4">
-        ← Torna ai progetti
-      </Link>
+      {/* Immagine principale */}
 
-      {/* Titolo e Descrizione */}
-      <div className="row align-items-center mb-5">
-        <div className="col-md-6">
-          <h1 className="mb-3">{project.title}</h1>
-          <p className="lead">{project.fullDescription}</p>
+      <div className="row project-hero align-items-start mb-5">
+        <h1 className="project-detailtitle text-center ">{project.title}</h1>
+        <p className="project-detaildescription mt-3 mb-4 text-center ">
+          {project.description}
+        </p>
+        <div className="col-lg-7 mb-4">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="img-fluid project-hero-img"
+          />
+        </div>
 
-          {/* Informazioni di base */}
-          <div className="mt-4">
-            <p>
-              <strong>Anno:</strong> {project.year}
-            </p>
-            <p>
-              <strong>Ruolo:</strong> {project.role}
-            </p>
-            <p>
-              <strong>Durata:</strong> {project.duration}
-            </p>
-          </div>
+        {/* Info Progetto */}
 
-          {/* Tecnologie */}
-          <div className="mt-3">
-            {project.technologies.map((tech, index) => (
-              <span key={index} className="badge bg-secondary me-2">
-                {tech}
-              </span>
-            ))}
-          </div>
+        <div className="col-lg-5">
+          <div className="project-info-card">
+            <h1 className="project-semititle">Dettagli progetto</h1>
+            <p className="project-fulldescription">{project.fullDescription}</p>
 
-          <div className="mt-4">
+            {/* Meta Info*/}
+
+            <div className="project-meta">
+              <p>
+                <strong>Anno:</strong> {project.year}
+              </p>
+
+              <p>
+                <strong>Ruolo:</strong> {project.role}
+              </p>
+
+              <p>
+                <strong>Durata:</strong> {project.duration}
+              </p>
+            </div>
+
+            {/* Tecnologie */}
+
+            <div className="project-tech">
+              {project.technologies.map((tech, index) => (
+                <span key={index} className="tech-badge">
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* GITHUB */}
+
             <a
               href={project.github}
               target="_blank"
               rel="noreferrer"
-              className="btn btn-dark"
+              className="btn btn-github mt-3"
             >
-              GitHub
+              Vedi su GitHub
             </a>
           </div>
         </div>
-
-        <div className="col-md-6">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="img-fluid rounded-4 shadow-sm"
-          />
-        </div>
       </div>
 
-      {/* Challenges */}
-      <div className="mb-5">
-        <h3 className="mb-3">Sfide affrontate</h3>
-        <ul>
-          {project.challenges.map((challenge, index) => (
-            <li key={index}>{challenge}</li>
-          ))}
-        </ul>
-      </div>
+      {/* Sfide affrontate */}
 
-      {/* Galleria Immagini */}
-      <div>
-        <h3 className="mb-4">Galleria</h3>
-        <div className="row">
-          {project.gallery.map((img, index) => (
-            <div key={index} className="col-md-4 mb-4">
-              <img
-                src={img}
-                alt={`Screenshot ${index + 1}`}
-                className="img-fluid rounded-4 shadow-sm"
-              />
-            </div>
-          ))}
+      {project.challenges && (
+        <div className="project-challenges">
+          <h3 className="mb-3">Sfide affrontate</h3>
+
+          <ul>
+            {project.challenges.map((challenge, index) => (
+              <li key={index}>{challenge}</li>
+            ))}
+          </ul>
         </div>
+      )}
+
+      {/* Galleria */}
+
+      {project.gallery && (
+        <div className="project-gallery mt-5">
+          <h3 className="mb-4">Galleria</h3>
+
+          <div className="row">
+            {project.gallery.map((img, index) => (
+              <div key={index} className="col-md-4 mb-4">
+                <img
+                  src={img}
+                  alt={`${project.title} screenshot ${index + 1}`}
+                  className="img-fluid gallery-img"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      {/* TORNA AI PROGETTI */}
+      <div className="text-center mb-5 mt-4">
+        <Link to="/projects" className="btn btn-back ">
+          ← Torna ai progetti
+        </Link>
       </div>
     </motion.div>
   );
