@@ -1,21 +1,48 @@
+import { motion } from "framer-motion";
+
 function AboutSection({ subtitle, image, children, reverse = false }) {
   return (
-    <section className="py-4 py-md-5">
+    <section className="py-5 about-section">
       <div className="container">
         <div
-          className={`row align-items-center ${
+          className={`row align-items-start ${
             reverse ? "flex-md-row-reverse" : ""
           }`}
         >
           {/* Immagine */}
           <div className="col-12 col-md-6 mb-4 mb-md-0">
-            <img src={image} alt={subtitle} className="img-fluid rounded" />
+            <motion.img
+              src={image}
+              alt={subtitle}
+              className="img-fluid rounded about-image"
+              initial={{ opacity: 0, x: reverse ? 60 : -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            />
           </div>
 
-          {/*  Testo */}
-          <div className="col-12 col-md-6">
-            <h2 className="h3 mb-3 text-center text-md-start">{subtitle}</h2>
-            <div className="about-content">{children}</div>
+          {/* Testo */}
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
+            <motion.h2
+              className="h3 mb-3 text-center text-md-start about-title"
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              {subtitle}
+            </motion.h2>
+
+            <motion.div
+              className="about-content flex-grow-1"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+            >
+              {children}
+            </motion.div>
           </div>
         </div>
       </div>
