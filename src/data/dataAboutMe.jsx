@@ -100,7 +100,7 @@ export const aboutSections = [
 
 export const skills = {
   hard: {
-    frontend: [
+    Frontend: [
       "HTML5",
       "CSS3",
       "JavaScript",
@@ -109,8 +109,8 @@ export const skills = {
       "Bootstrap",
       "Tailwind CSS",
     ],
-    backend: ["Node.js", "Express", "MySQL", "REST API"],
-    design: [
+    Backend: ["Node.js", "Express", "MySQL", "REST API"],
+    Design: [
       "UI/UX Basics",
       "Atomic Design",
       "Storybook",
@@ -118,7 +118,7 @@ export const skills = {
       "Responsive Design",
       "Componenti riutilizzabili",
     ],
-    tools: ["Git", "GitHub", "VS Code", "Postman", "NPM"],
+    Tools: ["Git", "GitHub", "VS Code", "Postman", "NPM"],
   },
   soft: [
     "Team Work",
