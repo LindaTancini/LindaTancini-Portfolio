@@ -1,0 +1,32 @@
+.about-section::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 60px auto 0;
+  background: linear-gradient(90deg, transparent, #a66466, transparent);
+}
+
+/* Immagine */
+.about-image {
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.03);
+}
+
+/* Contenuto */
+.about-content {
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+/* Sottotitolo */
+.about-intro {
+  max-width: 600px;
+  margin: auto;
+  color: #777;
+}
