@@ -8,7 +8,11 @@ function AboutMePage() {
       {/* Titolo  */}
       <section className="py-5 text-center">
         <div className="container">
-          <h1 className="display-4 mb-4">About Me</h1>
+          <h1 className="display-4 mb-3">Un mondo di pixel e fusa</h1>
+          <p className="about-intro">
+            Linda è una sviluppatrice front-end appassionata di interfacce
+            moderne, animazioni e design pulito.
+          </p>
         </div>
       </section>
 
@@ -27,7 +31,7 @@ function AboutMePage() {
       {/* Sezione Skills */}
       <section className="py-5">
         <div className="container">
-          <h2 className="text-center mb-5">Skills</h2>
+          <h2 className="text-center mb-5">Competenze tecniche e Soft Skill</h2>
 
           {/* Hard Skills */}
           {Object.entries(skills.hard).map(([category, skillList]) => (
