@@ -80,23 +80,111 @@
   background: #8e5052;
 }
 
-.project-gallery img {
+/* Sezione sfide */
+
+.project-challenges {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* GALLERIA PROGETTO */
+
+.project-gallery {
+  margin-top: 60px;
+}
+
+/* Container carousel */
+
+#projectCarousel {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Slide */
+
+.carousel-item {
+  text-align: center;
+}
+
+/* Immagine carousel */
+
+.gallery-carousel-img {
+  max-height: 500px;
+  width: auto;
+  margin: 0 auto;
+  object-fit: contain;
   border-radius: 16px;
-  transition: transform 0.25s ease;
+  cursor: zoom-in;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.project-gallery img:hover {
-  transform: scale(1.04);
+/* Hover immagine */
+
+.gallery-carousel-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Contenitore del lightbox */
+/* Caption sotto immagine */
+
+.carousel-caption {
+  position: static;
+  margin-top: 12px;
+  background: #a66466;
+  border-radius: 8px;
+  padding: 6px 14px;
+  display: inline-block;
+}
+
+.carousel-caption p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Frecce carousel */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+.carousel-control-prev {
+  left: -60px;
+}
+
+.carousel-control-next {
+  right: -60px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+  width: 50px;
+  height: 50px;
+}
+
+/* LIGHTBOX */
+
 .image-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,7 +192,8 @@
   cursor: pointer;
 }
 
-/* Contenuto */
+/* Contenuto lightbox */
+
 .lightbox-content {
   text-align: center;
   position: relative;
@@ -113,58 +202,52 @@
 }
 
 /* Immagine ingrandita */
+
 .image-preview {
   max-width: 100%;
   max-height: 80vh;
-  border-radius: 8px;
+  border-radius: 12px;
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Titolo dell’immagine */
+/* Titolo immagine */
+
 .lightbox-title {
   color: #fff;
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
+  margin-top: 10px;
+  font-size: 18px;
   font-weight: 500;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
 
-/* Frecce avanti/indietro */
+/* Frecce lightbox */
+
 .lightbox-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.55);
   color: #fff;
   border: none;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
+  font-size: 32px;
+  padding: 8px 14px;
   cursor: pointer;
   z-index: 1060;
-  border-radius: 4px;
+  border-radius: 6px;
   user-select: none;
+  transition: background 0.2s ease;
 }
 
 .lightbox-arrow.left {
-  left: 20px;
+  left: -60px;
 }
 
 .lightbox-arrow.right {
-  right: 20px;
+  right: -60px;
 }
 
 .lightbox-arrow:hover {
-  background: rgba(0, 0, 0, 0.7);
-}
-
-/* Hover immagini */
-.gallery-img {
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.gallery-img:hover {
-  transform: scale(1.05);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 /* Torna ai progetti  */
