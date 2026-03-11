@@ -89,6 +89,84 @@
   transform: scale(1.04);
 }
 
+/* Contenitore del lightbox */
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  cursor: pointer;
+}
+
+/* Contenuto */
+.lightbox-content {
+  text-align: center;
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Immagine ingrandita */
+.image-preview {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Titolo dell’immagine */
+.lightbox-title {
+  color: #fff;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Frecce avanti/indietro */
+.lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 1060;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.lightbox-arrow.left {
+  left: 20px;
+}
+
+.lightbox-arrow.right {
+  right: 20px;
+}
+
+.lightbox-arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Hover immagini */
+.gallery-img {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
 /* Torna ai progetti  */
 .btn-back {
   background: transparent;
