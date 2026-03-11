@@ -4,26 +4,29 @@ const homeProjects = [
   {
     id: 1,
     title: "Card Blog Patisserie",
+    slug: "blog-patisserie",
     description:
       "Un Design System che prende ispirazione per un ipotetico blog che pubblica ricette di dolci, in particolare di pasticceria home-made.",
     image: "/public/projects/blog-patisserie.png",
-    slug: "blog-patisserie",
+    category: "Design System",
   },
   {
     id: 2,
     title: "Card e-commerce Gatti",
+    slug: "ecommerce-gatti",
     description:
       "Un Design System che prende ispirazione per un ipotetico e-commerce che vende prodotti per animali, in particolare per gatti.",
     image: "/public/projects/ecommerce-gatti.png",
-    slug: "ecommerce-gatti",
+    category: "Design System",
   },
   {
     id: 3,
-    title: "Movies Blog",
+    title: "Portfolio Personale",
+    slug: "portfolio-personale",
     description:
-      "Progetto Full Stack individuale sulla creazione e gestione di un blog di film. Realizzato con React per il front-end e Node.js con Express per il back-end.",
-    image: "/public/projects/movies-blog.png",
-    slug: "movies-blog",
+      "Progetto indivuale del mio portfolio personale volto a vetrina digitale dei miei lavori e delle mie competenze.",
+    image: "/public/projects/portfolio-personale.png",
+    category: "Front-end",
   },
 ];
 
