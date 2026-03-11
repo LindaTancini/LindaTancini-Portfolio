@@ -24,6 +24,14 @@
   color: #555;
 }
 
+/* Titolo */
+.about-title {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #8f4f52;
+}
+
 /* Sottotitolo */
 .about-intro {
   max-width: 600px;
