@@ -22,9 +22,56 @@ const projectsCard = [
     category: "Design System",
     github: "https://github.com/LindaTancini/blog-patisserie-design-system",
     gallery: [
-      "/public/projects/blog-patisserie.png",
-      "/public/projects/blog-patisserie.png",
-      "/public/projects/blog-patisserie.png",
+      {
+        src: "/public/blog-patisserie/Palette-Colors.png",
+        title: "Palette colori",
+      },
+      { src: "/public/blog-patisserie/Badge.png", title: "Badge" },
+      { src: "/public/blog-patisserie/Button.png", title: "Bottone" },
+      {
+        src: "/public/blog-patisserie/Card-Cupcake+new.png",
+        title: "Card Cupcake",
+      },
+      {
+        src: "/public/blog-patisserie/CardBack-Cupcake.png",
+        title: "Back Card Cupcake",
+      },
+      {
+        src: "/public/blog-patisserie/Card-Cupcake-dark.png",
+        title: "Card Cupcake Dark",
+      },
+      {
+        src: "/public/blog-patisserie/Card-Cocco-glutenfree.png",
+        title: "Card Cocco Gluten-Free",
+      },
+      {
+        src: "/public/blog-patisserie/CardBack-Cocco.png",
+        title: "Back Card Cocco",
+      },
+      {
+        src: "/public/blog-patisserie/Card-Cocco-dark.png",
+        title: "Card Cocco Dark",
+      },
+      {
+        src: "/public/blog-patisserie/Card-Cheesecake-popular.png",
+        title: "Card Cheesecake Popolare",
+      },
+      {
+        src: "/public/blog-patisserie/CardBack-Cheesecake.png",
+        title: "Back Card Cheesecake",
+      },
+      {
+        src: "/public/blog-patisserie/Card-Cheesecake-dark.png",
+        title: "Card Cheesecake Dark",
+      },
+      {
+        src: "/public/blog-patisserie/Card-Responsive-SmallMobile.png",
+        title: "Card Responsiva - Mobile Piccolo",
+      },
+      {
+        src: "/public/blog-patisserie/Card-Responsive-Tablet.png",
+        title: "Card Responsiva - Tablet",
+      },
     ],
   },
   {
@@ -48,9 +95,39 @@ const projectsCard = [
     category: "Design System",
     github: "https://github.com/LindaTancini/webdesign-card-component",
     gallery: [
-      "/public/projects/ecommerce-gatti.png",
-      "/public/projects/ecommerce-gatti.png",
-      "/public/projects/ecommerce-gatti.png",
+      { src: "/public/card-gatti/Palette-Color.png", title: "Palette Colori" },
+      { src: "/public/card-gatti/Badge.png", title: "Badge" },
+      { src: "/public/card-gatti/Button.png", title: "Bottone" },
+      {
+        src: "/public/card-gatti/Button-Disabled.png",
+        title: "Bottone Disabilitato",
+      },
+      { src: "/public/card-gatti/Card-Default.png", title: "Card Predefinita" },
+      {
+        src: "/public/card-gatti/Card-Default-Dark.png",
+        title: "Card Predefinita Dark",
+      },
+      { src: "/public/card-gatti/Card-Discount.png", title: "Card Sconto" },
+      {
+        src: "/public/card-gatti/Card-Discount-Dark.png",
+        title: "Card Sconto Dark",
+      },
+      {
+        src: "/public/card-gatti/Card-SoldOut.png",
+        title: "Card Prodotto Esaurito",
+      },
+      {
+        src: "/public/card-gatti/Card-SoldOut-Dark.png",
+        title: "Card Prodotto Esaurito Dark",
+      },
+      {
+        src: "/public/card-gatti/CardResponsive-Mobile.png",
+        title: "Card Responsiva - Mobile",
+      },
+      {
+        src: "/public/card-gatti/CardResponsive-Tablet.png",
+        title: "Card Responsiva - Tablet",
+      },
     ],
   },
   {
@@ -148,9 +225,35 @@ const projectsCard = [
     category: "Full-stack",
     github: "https://github.com/LindaTancini/webapp-react",
     gallery: [
-      "/public/projects/movies-blog.png",
-      "/public/projects/movies-blog.png",
-      "/public/projects/movies-blog.png",
+      { src: "/public/cine-blog/Homepage.png", title: "Homepage" },
+      { src: "/public/cine-blog/Lista-Film.png", title: "Lista Film" },
+      { src: "/public/cine-blog/Scheda-Film.png", title: "Scheda Film" },
+      {
+        src: "/public/cine-blog/Aggiungi-Recensione.png",
+        title: "Aggiungi Recensione",
+      },
+      {
+        src: "/public/cine-blog/Film-con-recensioni.png",
+        title: "Film con Recensioni",
+      },
+      { src: "/public/cine-blog/Filtro-Ricerca.png", title: "Filtro Ricerca" },
+      { src: "/public/cine-blog/Aggiunta-Film.png", title: "Aggiunta Film" },
+      {
+        src: "/public/cine-blog/Responsive-Homepage.png",
+        title: "Responsive Homepage",
+      },
+      {
+        src: "/public/cine-blog/Responsive-SchedaFilm.png",
+        title: "Responsive Scheda Film",
+      },
+      {
+        src: "/public/cine-blog/Responsive-Dettaglio-Film.png",
+        title: "Responsive Dettaglio Film",
+      },
+      {
+        src: "/public/cine-blog/Responsive-Aggiunta-Film.png",
+        title: "Responsive Aggiunta Film",
+      },
     ],
   },
   {
@@ -174,9 +277,22 @@ const projectsCard = [
     category: "Front-end",
     github: "https://github.com/LindaTancini/js-photo-blog",
     gallery: [
-      "/public/projects/photo-blog.png",
-      "/public/projects/photo-blog.png",
-      "/public/projects/photo-blog.png",
+      {
+        src: "/public/photo-blog/Photo-Blog-Hover.png",
+        title: "Photo Blog Hover",
+      },
+      {
+        src: "/public/photo-blog/Photo-Blog-Attivo.png",
+        title: "Photo Blog Immagine Attiva",
+      },
+      {
+        src: "/public/photo-blog/Photo-Blog-Responsive-Mobile.png",
+        title: "Photo Blog Responsive Mobile",
+      },
+      {
+        src: "/public/photo-blog/Photo-Blog-Responsive-Tablet.png",
+        title: "Photo Blog Responsive Tablet",
+      },
     ],
   },
 ];
