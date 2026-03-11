@@ -100,9 +100,31 @@ const projectsCard = [
     category: "Full-stack",
     github: "https://github.com/LindaTancini/boolshop-react",
     gallery: [
-      "/public/projects/boolshop.png",
-      "/public/projects/boolshop.png",
-      "/public/projects/boolshop.png",
+      { src: "/public/boolshop/Caroselli.png", title: "Caroselli" },
+      { src: "/public/boolshop/Negozio-Griglia.png", title: "Negozio Griglia" },
+      { src: "/public/boolshop/Negozio-Lista.png", title: "Negozio Lista" },
+      { src: "/public/boolshop/Pagina-Carrello.png", title: "Pagina Carrello" },
+      {
+        src: "/public/boolshop/Carrello-Laterale.png",
+        title: "Carrello Laterale",
+      },
+      {
+        src: "/public/boolshop/Pagina di pagamento.png",
+        title: "Pagina di Pagamento",
+      },
+      { src: "/public/boolshop/Wishlist.png", title: "Wishlist" },
+      {
+        src: "/public/boolshop/Responsive mobile.png",
+        title: "Responsive Mobile",
+      },
+      {
+        src: "/public/boolshop/Responsive tablet.png",
+        title: "Responsive Tablet",
+      },
+      {
+        src: "/public/boolshop/Responsive laptop.png",
+        title: "Responsive Laptop",
+      },
     ],
   },
   {
