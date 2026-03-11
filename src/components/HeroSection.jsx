@@ -1,13 +1,19 @@
 // Importazoni
 import { Link } from "react-router-dom";
 import catsHero from "../assets/cats-hero.png";
+import { motion } from "framer-motion";
 
 // Hero Component
 function HeroSection() {
   const skillshome = ["CSS", "React", "JS", "Storybook"];
 
   return (
-    <section className="hero">
+    <motion.section
+      className="hero"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+    >
       <div className="container h-100 d-flex align-items-center">
         <div className="row w-100 align-items-center justify-content-between">
           {/* Testo */}
@@ -45,7 +51,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

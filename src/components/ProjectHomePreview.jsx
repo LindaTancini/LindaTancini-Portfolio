@@ -1,22 +1,38 @@
 import dataProjectsHome from "../data/dataProjectsHome";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function ProjectHomePreview() {
   return (
     <section className="projects-preview py-5">
-      <h2 className="project-home-title text-center mb-3">
+      <motion.h2
+        className="project-home-title text-center mb-3"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         Progetti in evidenza
-      </h2>
-      <p className="text-center project-home-intro">
+      </motion.h2>
+      <motion.p
+        className="text-center project-home-intro"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+      >
         Alcuni dei miei progetti più recenti e significativi. Clicca su "Scopri
         di più" per vedere i dettagli di ciascun progetto 🐱
-      </p>
+      </motion.p>
 
       <div className="container">
         <div className="row">
           {dataProjectsHome.map((project) => (
             <div key={project.slug} className="col-md-4 mb-4">
-              <div className="project-card card h-100 border-0">
+              <motion.div
+                className="project-card card h-100 border-0"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              >
                 {/* Immagine */}
                 <img
                   src={project.image}
@@ -46,7 +62,7 @@ function ProjectHomePreview() {
                     Scopri di più
                   </Link>
                 </div>
-              </div>
+              </motion.div>
             </div>
           ))}
         </div>

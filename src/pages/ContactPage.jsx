@@ -1,17 +1,28 @@
 // Importazioni
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function ContactPage() {
   return (
     <div className="container py-5">
       <div className="text-center mb-5">
-        <h1 className="fw-bold contact-title">
+        <motion.h1
+          className="fw-bold contact-title"
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           Contattami con un colpo di zampa!
-        </h1>
-        <p className="text-muted mt-3 contact-text">
+        </motion.h1>
+        <motion.p
+          className="text-muted mt-3 contact-text"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+        >
           Hai un progetto in mente o vuoi collaborare? <br />
           Scrivimi, non morderò (probabilmente) 😼
-        </p>
+        </motion.p>
       </div>
 
       <div className="row justify-content-center">
@@ -20,7 +31,7 @@ function ContactPage() {
             <form action="https://formspree.io/f/mwvndzjb" method="POST">
               {/* Nome */}
               <div className="mb-3">
-                <label className="form-label">Nome</label>
+                <label className="form-label">Nome:</label>
                 <input
                   type="text"
                   name="name"
@@ -32,7 +43,7 @@ function ContactPage() {
 
               {/* Cognome */}
               <div className="mb-3">
-                <label className="form-label">Cognome</label>
+                <label className="form-label">Cognome:</label>
                 <input
                   type="text"
                   name="surname"
@@ -44,7 +55,7 @@ function ContactPage() {
 
               {/* Email */}
               <div className="mb-3">
-                <label className="form-label">Email</label>
+                <label className="form-label">Email:</label>
                 <input
                   type="email"
                   name="email"
@@ -56,7 +67,7 @@ function ContactPage() {
 
               {/* Oggetto */}
               <div className="mb-3">
-                <label className="form-label">Oggetto</label>
+                <label className="form-label">Oggetto:</label>
                 <input
                   type="text"
                   name="subject"
@@ -68,7 +79,7 @@ function ContactPage() {
 
               {/* Messaggio */}
               <div className="mb-4">
-                <label className="form-label">Messaggio</label>
+                <label className="form-label">Messaggio:</label>
                 <textarea
                   name="message"
                   className="form-control"
@@ -91,7 +102,7 @@ function ContactPage() {
           Seguimi sui social, mi piacerebbe condividere il mio mondo con te 💕🐱
         </p>
 
-        <div className="d-flex justify-content-center gap-4">
+        <div className="d-flex justify-content-center gap-4 mt-3">
           <a
             href="https://github.com/LindaTancini?tab=repositories"
             target="_blank"

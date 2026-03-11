@@ -2,6 +2,7 @@
 import ProjectCard from "./ProjectCard";
 import dataProjectsCard from "../data/dataProjectsCard";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 function ProjectCardList() {
   const [category, setCategory] = useState("all");
@@ -12,7 +13,12 @@ function ProjectCardList() {
       : dataProjectsCard.filter((project) => project.category === category);
 
   return (
-    <div className="container">
+    <motion.div
+      className="container"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+    >
       {/* Filtri */}
       <div className="project-filters mb-5 text-center">
         <button
@@ -45,14 +51,19 @@ function ProjectCardList() {
       </div>
 
       {/* Card */}
-      <div className="row g-4">
+      <motion.div
+        className="row g-4"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+      >
         {filteredProjects.map((project) => (
           <div className="col-md-4" key={project.id}>
             <ProjectCard {...project} />
           </div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
