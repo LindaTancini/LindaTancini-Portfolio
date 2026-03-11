@@ -62,10 +62,22 @@ function ProjectsDetailsPage() {
       {/* Immagine principale */}
 
       <div className="row project-hero align-items-start mb-5">
-        <h1 className="project-detailtitle text-center">{project.title}</h1>
-        <p className="project-detaildescription mt-3 mb-4 text-center">
+        <motion.h1
+          className="project-detailtitle text-center"
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          {project.title}
+        </motion.h1>
+        <motion.p
+          className="project-detaildescription mt-3 mb-4 text-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+        >
           {project.description}
-        </p>
+        </motion.p>
         <div className="col-lg-7 mb-4">
           <img
             src={project.image}
@@ -138,11 +150,23 @@ function ProjectsDetailsPage() {
 
       {project.gallery && (
         <div className="project-gallery mt-5">
-          <h3 className="project-semititle text-center mb-4 fs-1">Galleria</h3>
-          <p className="project-detaildescription text-center mb-4">
+          <motion.h3
+            className="project-semititle text-center mb-4 fs-1"
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            Galleria
+          </motion.h3>
+          <motion.p
+            className="project-detaildescription text-center mb-4"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+          >
             Vuoi dare un’occhiata più da vicino al progetto? Ecco alcune
             immagini!
-          </p>
+          </motion.p>
 
           <div
             id="projectCarousel"
