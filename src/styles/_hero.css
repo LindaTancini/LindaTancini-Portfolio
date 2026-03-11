@@ -27,6 +27,7 @@
 .hero-text h1 {
   font-size: 3rem;
   line-height: 1.1;
+  color: #7e4143;
 }
 
 .hero-text p {
@@ -36,6 +37,57 @@
 .sub-headline {
   font-size: 2.2rem;
   color: #cc4f7c;
+}
+
+/* Skill */
+.hero-skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.skill-home-chip {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1.5px solid #555;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.skill-home-chip::before {
+  content: "✦";
+  margin-right: 6px;
+  color: #cc4f7c;
+}
+
+.btn-outline-pink {
+  border: 2px solid #e889a7;
+  color: #e889a7;
+  background: transparent;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-pink:hover {
+  background: #e889a7;
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Freccia */
+.hero-about-arrow span {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.hero-about-arrow:hover span {
+  transform: translateX(4px);
 }
 
 /* Immagine */
