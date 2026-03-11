@@ -25,7 +25,12 @@ function ContactPage() {
         </motion.p>
       </div>
 
-      <div className="row justify-content-center">
+      <motion.div
+        className="row justify-content-center"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="col-lg-6">
           <div className="card border-0 shadow-sm rounded-4 p-4">
             <form action="https://formspree.io/f/mwvndzjb" method="POST">
@@ -95,12 +100,17 @@ function ContactPage() {
             </form>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="text-center mt-5">
-        <p className="text-muted mb-2 contact-text">
+        <motion.p
+          className="text-muted mb-2 contact-text"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+        >
           Seguimi sui social, mi piacerebbe condividere il mio mondo con te 💕🐱
-        </p>
+        </motion.p>
 
         <div className="d-flex justify-content-center gap-4 mt-3">
           <a
