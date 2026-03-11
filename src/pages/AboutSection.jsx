@@ -10,7 +10,7 @@ function AboutSection({ subtitle, image, children, reverse = false }) {
           }`}
         >
           {/* Immagine */}
-          <div className="col-12 col-md-6 mb-4 mb-md-0">
+          <div className="col-12 col-lg-6 mb-4 mb-lg-0">
             <motion.img
               src={image}
               alt={subtitle}
@@ -23,9 +23,9 @@ function AboutSection({ subtitle, image, children, reverse = false }) {
           </div>
 
           {/* Testo */}
-          <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
+          <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
             <motion.h2
-              className="h3 mb-3 text-center text-md-start about-title"
+              className="h3 mb-3 text-center text-lg-start about-title"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
