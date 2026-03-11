@@ -21,33 +21,25 @@
   color: #666;
 }
 
-/* Titolo */
-.projects-preview h2 {
-  font-size: 2.2rem;
+.project-home-title {
+  font-size: 34px;
   font-weight: 700;
-  color: #cc4f7c;
-  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  color: #8f4f52;
 }
 
-/* Immagine */
-.project-img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
+.project-home-intro {
+  max-width: 600px;
+  margin: auto;
+  color: #777;
 }
 
-/* Bottone */
-
-.btn-outline-pink {
-  border: 1px solid #e673a3;
-  color: #e673a3;
-  border-radius: 30px;
-  padding: 6px 18px;
-  font-size: 0.9rem;
-  transition: 0.25s ease;
-}
-
-.btn-outline-pink:hover {
-  background-color: #e673a3;
-  color: #fff;
+.project-home-intro::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 10px auto 0;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, transparent, #a66466, transparent);
 }
