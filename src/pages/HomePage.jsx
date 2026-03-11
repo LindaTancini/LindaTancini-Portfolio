@@ -1,3 +1,4 @@
+import ContactHome from "../components/ContactHome";
 import HeroSection from "../components/HeroSection";
 import ProjectHomePreview from "../components/ProjectHomePreview";
 
@@ -6,6 +7,7 @@ function HomePage() {
     <div>
       <HeroSection />
       <ProjectHomePreview />
+      <ContactHome />
     </div>
   );
 }
