@@ -3,8 +3,10 @@ import { useParams } from "react-router-dom";
 import dataProjectsCard from "../data/dataProjectsCard";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function ProjectsDetailsPage() {
+  const [selectedIndex, setSelectedIndex] = useState(null);
   // Ottengo lo slug dai parametri dell'URL e cerco il progetto corrispondente nei dati
   const { slug } = useParams();
   // Trova il progetto con lo slug corrispondente
@@ -18,6 +20,37 @@ function ProjectsDetailsPage() {
       </div>
     );
   }
+
+  // Funzioni per gestire l'apertura e la chiusura dell'overlay, e per navigare tra le immagini della galleria
+  const openImage = (index) => setSelectedIndex(index);
+  const closeImage = () => setSelectedIndex(null);
+
+  // Funzioni per navigare tra le immagini della galleria
+  const prevImage = (e) => {
+    e.stopPropagation(); // impedisce di chiudere l'overlay
+    setSelectedIndex((prev) =>
+      prev === 0 ? project.gallery.length - 1 : prev - 1,
+    );
+  };
+
+  // Funzione per passare all'immagine successiva
+  const nextImage = (e) => {
+    e.stopPropagation();
+    setSelectedIndex((prev) =>
+      prev === project.gallery.length - 1 ? 0 : prev + 1,
+    );
+  };
+
+  // ESC per chiudere l'overlay
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") {
+        closeImage();
+      }
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
 
   return (
     <motion.div
@@ -103,22 +136,43 @@ function ProjectsDetailsPage() {
       )}
 
       {/* Galleria */}
-
       {project.gallery && (
         <div className="project-gallery mt-5">
           <h3 className="mb-4">Galleria</h3>
-
           <div className="row">
-            {project.gallery.map((img, index) => (
+            {project.gallery.map((imgObj, index) => (
               <div key={index} className="col-md-4 mb-4">
                 <img
-                  src={img}
-                  alt={`${project.title} screenshot ${index + 1}`}
+                  src={imgObj.src}
+                  alt={imgObj.title}
                   className="img-fluid gallery-img"
+                  onClick={() => openImage(index)}
                 />
               </div>
             ))}
           </div>
+        </div>
+      )}
+
+      {/* Lightbox Overlay */}
+      {selectedIndex !== null && (
+        <div className="image-overlay" onClick={closeImage}>
+          <button className="lightbox-arrow left" onClick={prevImage}>
+            &#10094;
+          </button>
+          <div className="lightbox-content">
+            <img
+              src={project.gallery[selectedIndex].src}
+              alt={project.gallery[selectedIndex].title}
+              className="image-preview"
+            />
+            <p className="lightbox-title">
+              {project.gallery[selectedIndex].title}
+            </p>
+          </div>
+          <button className="lightbox-arrow right" onClick={nextImage}>
+            &#10095;
+          </button>
         </div>
       )}
       {/* TORNA AI PROGETTI */}
