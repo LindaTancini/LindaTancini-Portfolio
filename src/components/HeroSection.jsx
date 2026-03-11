@@ -1,8 +1,11 @@
 // Importazoni
+import { Link } from "react-router-dom";
 import catsHero from "../assets/cats-hero.png";
 
 // Hero Component
 function HeroSection() {
+  const skillshome = ["CSS", "React", "JS", "Storybook"];
+
   return (
     <section className="hero">
       <div className="container h-100 d-flex align-items-center">
@@ -17,9 +20,23 @@ function HeroSection() {
               Tra codice, design e un po’ di magia felina, creo esperienze
               digitali delicate e curate.
             </p>
-            <a href="/projects" className="btn btn-pink px-4 py-2">
+            <Link to="/projects" className="btn btn-pink px-4 py-2 mb-4">
               Guarda i miei progetti
-            </a>
+            </Link>
+            <div className="hero-skills-wrapper">
+              {skillshome.map((skill, index) => (
+                <span key={index} className="skill-home-chip">
+                  {skill}
+                </span>
+              ))}
+
+              <Link
+                to="/about"
+                className="btn btn-outline-pink hero-about-arrow"
+              >
+                Scopri di più su di me <span>➜</span>
+              </Link>
+            </div>
           </div>
 
           {/* Immagine */}
