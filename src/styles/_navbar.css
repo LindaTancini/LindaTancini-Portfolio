@@ -1,18 +1,31 @@
 .navbar {
   background-color: #f8d7e3 !important;
-  position: relative;
-  z-index: 10;
+  transition: all 0.3s ease;
+  z-index: 1030;
+}
+
+/* Navbar scroll */
+.navbar.navbar-scrolled {
+  background-color: #f8d7e3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Link */
 .navbar .nav-link {
   color: #a66466;
   font-weight: 800;
+  font-size: 1.2rem;
+  transition:
+    color 0.3s,
+    transform 0.3s;
 }
 
-/* Hover */
 .navbar .nav-link:hover {
   color: #d16c92;
   transform: translateY(-1px);
-  transition: color 0.3s, transform 0.3s;
+}
+
+/* Padding-top per il contenuto sotto la navbar */
+body {
+  padding-top: 70px;
 }
