@@ -44,9 +44,14 @@ function AboutMePage() {
       {/* Sezione Skills */}
       <section className="py-5">
         <div className="container">
-          <h2 className="about-title text-center mb-5">
+          <motion.h2
+            className="about-title text-center mb-5"
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
             Competenze tecniche e Soft Skill
-          </h2>
+          </motion.h2>
 
           {/* Hard Skills */}
           {Object.entries(skills.hard).map(([category, skillList]) => (
