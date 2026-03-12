@@ -147,13 +147,62 @@ const projectsCard = [
       "Sviluppare componenti modulari riutilizzabili",
       "Garantire responsività su diversi dispositivi",
     ],
-    image: "/public/projects/portfolio-personale.png",
+    image: "/public/projects/portfolio.png",
     category: "Front-end",
     github: "https://github.com/LindaTancini/LindaTancini-Portfolio",
     gallery: [
-      "/public/projects/portfolio-personale.png",
-      "/public/projects/portfolio-personale.png",
-      "/public/projects/portfolio-personale.png",
+      {
+        src: "/public/portfolio/Progetti-Evidenza.png",
+        title: "Progetti in Evidenza",
+      },
+      { src: "/public/portfolio/Footer+CTA.png", title: "Footer con CTA" },
+      {
+        src: "/public/portfolio/About-Prima-Sezione.png",
+        title: "About - Prima Sezione",
+      },
+      {
+        src: "/public/portfolio/About-Seconda-Sezione.png",
+        title: "About - Seconda Sezione",
+      },
+      {
+        src: "/public/portfolio/About-Terza-Sezione.png",
+        title: "About - Terza Sezione",
+      },
+      { src: "/public/portfolio/About-Tech.png", title: "About - Tecnologie" },
+      {
+        src: "/public/portfolio/Griglia-Progetti.png",
+        title: "Griglia Progetti",
+      },
+      {
+        src: "/public/portfolio/Dettagli-Progetto.png",
+        title: "Dettagli Progetto",
+      },
+      { src: "/public/portfolio/Contatti.png", title: "Contatti" },
+      { src: "/public/portfolio/Hamburger-Menu.png", title: "Hamburger Menu" },
+      {
+        src: "/public/portfolio/Responsive-Mobile-Homepage.png",
+        title: "Responsive Mobile - Homepage",
+      },
+      {
+        src: "/public/portfolio/Responsive-Mobile-AboutMe.png",
+        title: "Responsive Mobile - About Me",
+      },
+      {
+        src: "/public/portfolio/Responsive-Mobile-GrigliaProgetti.png",
+        title: "Responsive Mobile - Griglia Progetti",
+      },
+      {
+        src: "/public/portfolio/Responsive-Mobile-DettagliProgetto.png",
+        title: "Responsive Mobile - Dettagli Progetto",
+      },
+      {
+        src: "/public/portfolio/Responsive-Mobile-Galleria.png",
+        title: "Responsive Mobile - Galleria",
+      },
+      {
+        src: "/public/portfolio/Responsive-Mobile-Contatti.png",
+        title: "Responsive Mobile - Contatti",
+      },
     ],
   },
   {
