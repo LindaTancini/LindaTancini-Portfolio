@@ -1,0 +1,44 @@
+.music-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.equalizer {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 18px;
+}
+
+.equalizer span {
+  width: 3px;
+  height: 6px;
+  background: white;
+  animation: lofiBounce 1s infinite ease-in-out;
+}
+
+.equalizer span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.equalizer span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes lofiBounce {
+  0% {
+    height: 6px;
+  }
+  50% {
+    height: 18px;
+  }
+  100% {
+    height: 6px;
+  }
+}
