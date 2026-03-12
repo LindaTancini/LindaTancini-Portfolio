@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import MusicPlayer from "./MusicPlayer";
 
 function NavBar() {
   // Stato per gestire l'effetto di scorrimento
@@ -52,6 +53,10 @@ function NavBar() {
               </Link>
             </li>
           </ul>
+        </div>
+
+        <div className="d-flex align-items-center">
+          <MusicPlayer />
         </div>
 
         {/* Bottone per il menu a tendina su dispositivi mobili */}
