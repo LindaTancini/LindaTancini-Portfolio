@@ -7,7 +7,7 @@ const homeProjects = [
     slug: "blog-patisserie",
     description:
       "Un Design System che prende ispirazione per un ipotetico blog che pubblica ricette di dolci, in particolare di pasticceria home-made.",
-    image: "/public/projects/blog-patisserie.png",
+    image: "/projects/blog-patisserie.png",
     category: "Design System",
   },
   {
@@ -16,7 +16,7 @@ const homeProjects = [
     slug: "ecommerce-gatti",
     description:
       "Un Design System che prende ispirazione per un ipotetico e-commerce che vende prodotti per animali, in particolare per gatti.",
-    image: "/public/projects/ecommerce-gatti.png",
+    image: "/projects/ecommerce-gatti.png",
     category: "Design System",
   },
   {
@@ -25,7 +25,7 @@ const homeProjects = [
     slug: "portfolio-personale",
     description:
       "Progetto indivuale del mio portfolio personale volto a vetrina digitale dei miei lavori e delle mie competenze.",
-    image: "/public/projects/portfolio.png",
+    image: "/projects/portfolio.png",
     category: "Front-end",
   },
 ];
