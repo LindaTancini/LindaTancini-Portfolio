@@ -264,3 +264,22 @@
   background: #a66466;
   color: white;
 }
+
+/* Responsive Carosello Frecce in mobile */
+@media (max-width: 768px) {
+  .carousel-control-prev {
+    left: -45px;
+  }
+
+  .carousel-control-next {
+    right: -45px;
+  }
+
+  .lightbox-arrow.left {
+    left: -5px;
+  }
+
+  .lightbox-arrow.right {
+    right: -5px;
+  }
+}
