@@ -25,7 +25,7 @@ const homeProjects = [
     slug: "portfolio-personale",
     description:
       "Progetto indivuale del mio portfolio personale volto a vetrina digitale dei miei lavori e delle mie competenze.",
-    image: "/public/projects/portfolio-personale.png",
+    image: "/public/projects/portfolio.png",
     category: "Front-end",
   },
 ];
