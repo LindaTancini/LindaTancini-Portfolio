@@ -38,3 +38,25 @@
   margin: auto;
   color: #777;
 }
+
+/* Bottone AniList */
+.anilist-btn {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  text-decoration: none;
+
+  background: linear-gradient(135deg, #f8a8c2, #f48fb1);
+  color: white;
+  font-weight: 500;
+
+  transition: all 0.25s ease;
+  border: 1px solid #f3b6c8;
+}
+
+.anilist-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(244, 143, 177, 0.4);
+}
