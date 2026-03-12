@@ -70,21 +70,31 @@ export const aboutSections = [
     image: AboutMeHobby,
     text: (
       <>
-        Nel tempo libero mi piace leggere <strong>manga</strong> e guardare{" "}
-        <strong>anime</strong>. Mi affascina molto il modo in cui vengono
-        raccontate le storie e costruiti i personaggi.
-        <br />
-        Sono anche un’amante del <strong>gaming</strong>. Mi piacciono sia i
-        giochi complessi e strutturati sia quelli più tranquilli e gestionali,
-        perché mi aiutano a staccare ma anche a mantenere un{" "}
-        <strong>approccio logico e paziente</strong>.
+        Nel tempo libero mi piace immergermi nel mondo dei{" "}
+        <strong>manga</strong> e degli <strong>anime</strong>. Mi affascina il
+        modo in cui queste storie riescono a costruire personaggi profondi e
+        universi narrativi ricchi di emozioni e dettagli. Per tenere traccia
+        delle serie che guardo e dei manga che leggo utilizzo
+        <a
+          href="https://anilist.co/user/Lyliet/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="anilist-btn"
+        >
+          AniList
+        </a>
+        , dove organizzo le mie liste e scopro sempre nuovi titoli da vedere o
+        leggere. Sono anche un’appassionata di <strong>videogiochi</strong>. Mi
+        piacciono sia i giochi complessi e ricchi di storia sia quelli più
+        rilassanti e gestionali, perché mi permettono di staccare e allo stesso
+        tempo mantenere un approccio logico e paziente.
         <br />
         <br />
         Attualmente sto giocando a <strong>Genshin Impact</strong>,{" "}
         <strong>Zenless Zone Zero</strong>, <strong>Honkai: Star Rail</strong>,{" "}
-        <strong>Stardew Valley</strong> e <strong>Overwatch</strong>. Sono
-        appassionata anche di giochi più classici come <strong>The Sims</strong>
-        , <strong>Animal Crossing</strong> e <strong>Pokémon</strong>.
+        <strong>Stardew Valley</strong> e <strong>Overwatch</strong>. Tra i
+        giochi che amo da sempre ci sono anche <strong>The Sims</strong>,{" "}
+        <strong>Animal Crossing</strong> e <strong>Pokémon</strong>.
         <br />
         <br />
         Per quanto riguarda anime e manga, seguo principalmente il genere{" "}
