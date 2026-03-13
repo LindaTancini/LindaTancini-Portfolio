@@ -56,7 +56,13 @@ function NavBar() {
         </div>
 
         <div className="d-flex align-items-center">
-          <MusicPlayer />
+          <div className="music-text d-flex align-items-center">
+            <span className="music-label d-none d-lg-inline">
+              Play Music <span className="music-arrow">→</span>
+            </span>
+
+            <MusicPlayer />
+          </div>
         </div>
 
         {/* Bottone per il menu a tendina su dispositivi mobili */}
